@@ -1,0 +1,24 @@
+.input__wrapper {
+    position: relative;
+    margin: 25px 0;
+    input {
+        width: 100%;
+        padding: 10px 30px;
+        background-color: #353A40;
+        color: #778085;
+        border: 2px solid #353942;
+        border-radius: 4px;
+        box-shadow: inset 0px 0px 7px 0px #33363e;
+        outline: none;
+    }
+    
+    i {
+        position: absolute;
+        left: 7px;
+        top: 11px;
+        font-size: 15px;
+        color: #778085;
+
+    }
+    
+}

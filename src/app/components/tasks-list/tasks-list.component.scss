@@ -1,0 +1,37 @@
+p {
+    color: #E1EAEF;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.wrapper {
+    position: relative;
+
+    i {
+        position: absolute;
+        right: 4px;
+        top: 0px;
+        color: #778085;
+        font-size: 15px;
+    }
+}
+.toggle {
+    display: none;
+}
+
+.done {
+    color: green;
+    text-decoration: line-through;
+}
+
+.show-pin {
+    position: absolute;
+    left: -35px;
+}
+
+hr  {
+    border: none; 
+    background-color: #30393F; 
+    height: 2px; 
+}
+

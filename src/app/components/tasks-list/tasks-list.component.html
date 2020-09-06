@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="show-pin">
+       <app-app-pin [isPink]="true" *ngIf="task.pin"></app-app-pin>
+    </div> 
+    <p [ngClass]="{done: task.done}">{{task.value}}</p>
+    <i class="pi pi-ellipsis-h" (click)="showOptions($event)"
+    ></i>
+    <div [ngClass]="{toggle: task.showOptions}">
+        <app-task-options [task]="task"></app-task-options>  
+    </div>
+</div>
+<hr *ngIf="isRenderLine">

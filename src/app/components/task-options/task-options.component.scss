@@ -1,0 +1,70 @@
+.wrapper {
+    position: relative;
+    &__options {
+        position: absolute;
+        top: -15px;
+        right: -6px;
+        width: 135px;
+        background-color: #484F59;
+        border: 1px solid #353C46;
+        border-radius: 4px;
+
+            i {
+                margin-left: 10px;
+                margin-right: 10px;
+                color: #98A0AA;
+                font-size: 15px; 
+               }
+
+               p {
+                font-size: 15px;
+                color: #98A0AA;
+                padding: 3px 5px;
+                transition: .5s;
+                }
+
+                &_pin  {
+                    display: flex;
+                    align-items: baseline;
+                    margin-top: 5px;
+                    transition: .5s;
+                    
+                } 
+                
+            
+            &_done {
+                display: flex;
+                align-items: baseline;
+                transition: .5s;
+
+             
+            }
+
+            &_delete {
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 5px;
+                transition: .5s;
+
+            }
+            &_pin:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 4px 0px;
+            }
+            &_done:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 4px 0px;
+            }  &_delete:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 4px 0px;
+            }
+            
+    }
+    &__options::before {
+        content: ''; 
+        position: absolute; /* Абсолютное позиционирование */
+        right: 5px; top: -17px; /* Положение треугольника */
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-bottom: 10px solid #484F59; /* Добавляем треугольник */
+   }
+}
